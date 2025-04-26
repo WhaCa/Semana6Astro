@@ -1,0 +1,38 @@
+---
+
+const { title } = Astro.props;
+---
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Layoutmain</title>
+		<link rel="icon" href="https://i.ibb.co/pv2FwHf0/Reglamento.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+	</head>
+    <body>
+        <header id="titulo">
+            <a href="https://ibb.co/0jq8TCK5"><img src="https://i.ibb.co/hRshbBc0/Reglamento.png" alt="Reglamento" width="50"></a>
+            <nav>
+                <ul>
+                    <li><a href="/src/index.astro">Inicio</a></li>
+                    <li><a href="/contact.astro">Contacto</a></li>
+                    <li><a href="/src/about.astro">Sobre mí</a></li>    
+                </ul>
+            </nav>
+        </header>
+        <footer>
+            <section>
+                <a href="#titulo">Ir al comienzo</a>
+            </section>
+            <p>&copy; 2025 Warhammer fantasy battles 6ª Edicion. Todos los derechos resevados.</p>
+            <nav>
+                <ul>
+                    <li><a href="privacidad.html">Politica de Privacidad</a></li>
+                    <li><a href="terminos.html">Terminos y Condiciones</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

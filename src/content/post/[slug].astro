@@ -1,0 +1,33 @@
+---
+const pages = [
+  {
+    slug: undefined,
+    title: 'Blog',
+    text: 'Bienvenido a mi blog',
+  },
+  {
+    slug: 'reglasbasicas',
+    title: 'Reglas Básicas',
+    text: 'Aprender a jugar paso a paso',
+  },
+  {
+    slug: 'psicologia',
+    title: 'Psicología',
+    text: 'Aprender las reglas sobre psicología',
+  }
+];
+
+const { slug } = Astro.params;
+const page = pages.find((page) => page.slug === slug);
+if (!page) return Astro.redirect("/404");
+const { title, text } = page;
+---
+<html>
+<head>
+  <title>{title}</title>
+</head>
+<body>
+  <h1>{title}</h1>
+  <p>{text}</p>
+</body>
+</html>
