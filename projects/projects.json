@@ -1,0 +1,19 @@
+{
+    "proyectos": [
+        {
+            "nombre": "Reglas de armas",
+            "descripcion": "Aquí aprenderás a usar correctamente las armas en WFB",
+            "estado": "En progreso"
+        },
+        {
+            "nombre": "Combate cuerpo a cuerpo",
+            "descripcion": "Aquí aprenderás a realizar la resolución de un combate",
+            "estado": "En progreso"
+        },
+        {
+            "nombre": "Magia",
+            "descripcion": "Aquí aprenderás a realizar una fase de magia",
+            "estado": "En progreso"
+        }
+    ]
+}

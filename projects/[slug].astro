@@ -1,0 +1,39 @@
+---
+const pages = [
+  {
+    slug: undefined,
+    title: 'Proyectos',
+    text: 'Proyectos',
+  },
+  {
+    slug: 'Reglas de armas',
+    title: 'Reglas de armas',
+    text: 'Aquí aprenderás a usar correctamente las armas en WFB',
+  },
+  {
+    slug: 'Combate cuerpo a cuerpo',
+    title: 'Combate cuerpo a cuerpo',
+    text: 'Aquí aprenderás a realizar la resolución de un combate',
+  },
+  {
+    slug: 'Magia',
+    title: 'Magia',
+    text: 'Aquí aprenderás a realizar una fase de magia',
+  }
+];
+
+const { slug } = Astro.params;
+const page = pages.find((page) => page.slug === slug);
+if (!page) return Astro.redirect("/404");
+const { title, text } = page;
+---
+<html>
+    <head>
+        <title>{title}</title>
+    </head>
+    <body>
+        <h1>{title}</h1>
+        <p>{text}</p>
+    </body>
+</html>
+<script type="module" src="/src/projects/[slug].astro"></script>
